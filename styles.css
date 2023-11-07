@@ -1,0 +1,312 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif; /* Utilizar la fuente Montserrat */
+    background-color: #9ab6eb; /* Cambiar el color de fondo a un tono azul pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.patient-form {
+    background-color: #c0dfff; /* Fondo celeste más claro */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mantener dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.form-title {
+    font-weight: bold;
+    color: #017B43;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #017B43;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    border-radius: 10px; /* Esquinas redondeadas para los campos de entrada */
+}
+
+.input-container label {
+    font-weight: bold;
+    color: #017B43;
+    font-size: 16px;
+}
+
+.input-container input {
+    width: 95%; /* Hacer las cajas de texto un poco más estrechas */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Esquinas redondeadas para los campos de entrada */
+    background-color: #e0f6ff; /* Fondo celeste más claro */
+    color: #333;
+    font-family: 'Montserrat', sans-serif; /* Utilizar la fuente Montserrat */
+}
+
+.input-container input:focus {
+    border-color: #017B43;
+    box-shadow: 0 0 5px rgba(1, 123, 67, 0.5);
+}
+
+input[type="submit"] {
+    background-color: #017B43;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Esquinas redondeadas para el botón */
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #015A31;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+
+
+
+.input-container input:focus {
+    border-color: #017B43;
+    box-shadow: 0 0 5px rgba(1, 123, 67, 0.5);
+}
+
+input[type="submit"] {
+    background-color: #017B43;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Esquinas redondeadas para el botón */
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #015A31;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Agrega estilos CSS personalizados aquí */
+.redireccionar-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo azul, puedes cambiarlo */
+    color: #fff; /* Color de texto blanco, puedes cambiarlo */
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.redireccionar-link:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el enlace */
+}
+
+/* styles.css */
+.data-table {
+    border-collapse: collapse;
+    
+    width: 100%;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #c0dfff;
+    font-weight: bold;
+    
+}
+
+.data-table td {
+    background-color: #e0f6ff;
+    
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #fff;
+    
+}
+
+.data-table th, .data-table td {
+    
+    min-width: 100px;
+}
+
+
+/* ESTILOS INDEX - BOTONES*/
+/* styles.css */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #017B43;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #015A31;
+}
+
+
+.title_edit{
+    position: relative;
+    right: 7%;
+    color: white;
+    text-decoration: none;
+}
+.data-table data-table--edit{
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 80%;
+}
+
+/* Estilo para las cajas de entrada de texto */
+.table__item {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilo para las cajas de entrada de texto en foco (cuando se hace clic en ellas) */
+.table__item:focus {
+    outline: none; /* Elimina el borde de enfoque por defecto */
+    border-color: #007BFF; /* Cambia el color del borde en foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra en foco */
+}
+
+.container__submit--actualizar{
+    background-color: #015A31;
+    padding: 0;
+    margin: 0;
+    font-size: 9em;
+    
+}
+/* boton editar xd*/
+/* styles.css */
+.button {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    background-color: #007BFF !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border: 1px solid #007BFF !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.button:hover {
+    background-color: #007bff !important;
+}
+/* Estilos para el botón Volver */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Editar */
+.button-edit {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Editar */
+.button-editar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón con la clase "button-b" */
+.button-b {
+    background-color: #33adff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 20px;
+    border: 1px solid #33adff; /* Cambia el color del borde */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    /* Agrega otros estilos personalizados según tus preferencias */
+}
+
+/* Estilos para el botón con la clase "button-b" */
+.button-c {
+    background-color: #33adff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 20px;
+    border: 1px solid #33adff; /* Cambia el color del borde */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    /* Agrega otros estilos personalizados según tus preferencias */
+}
